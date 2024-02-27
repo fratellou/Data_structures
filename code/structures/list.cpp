@@ -2,9 +2,7 @@
 using namespace std;
 
 // A function that creates an empty linked list
-LinkedList LinkedList::createEmptyLinkedList() {
-    return LinkedList();
-}
+LinkedList LinkedList::createEmptyLinkedList() { return LinkedList(); }
 
 // Function to add an element to the beginning of the list
 void LinkedList::add(const string& data) {
@@ -19,16 +17,16 @@ void LinkedList::add(const string& data) {
 
 // Function that adds a new node with a value to the end of the linked list
 void LinkedList::addToEnd(const string& data) {
-    Node* newNode = new Node(data);
-    if (head == nullptr) {
-        head = newNode;
-    } else {
-        Node* current = head;
-        while (current->next != nullptr) {
-            current = current->next;
-        }
-        current->next = newNode;
+  Node* newNode = new Node(data);
+  if (head == nullptr) {
+    head = newNode;
+  } else {
+    Node* current = head;
+    while (current->next != nullptr) {
+      current = current->next;
     }
+    current->next = newNode;
+  }
 }
 
 // Function to remove the first element from the list

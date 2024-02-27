@@ -2,7 +2,7 @@
 using namespace std;
 
 // Push an element into the queue
-void Queue::push(const string& element) {
+void Queue::push(const string &element) {
   QueueNode *node = new QueueNode(element);
 
   if (!head) {

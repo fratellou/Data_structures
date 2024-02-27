@@ -9,7 +9,7 @@ class QueueNode {
   string data;
   QueueNode *next;
 
-  QueueNode(const string value) : next(nullptr) { data = value; }
+  QueueNode(const string &value) : next(nullptr) { data = value; }
 };
 
 class Queue {
@@ -37,7 +37,7 @@ class Queue {
   void setPrintErrorsTrue() { printErrors = 1; }
   int getPrintErrors() const { return printErrors; }
 
-  void push(const string& element);
+  void push(const string &element);
   const string pop();
 };
 

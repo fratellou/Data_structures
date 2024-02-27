@@ -17,7 +17,7 @@ class Stack {
   int printErrors = 1;  // A flag to control error message printing
 
  public:
- int size;
+  int size;
   StackNode *head;
   Stack() : size(0), head(nullptr) {}
 

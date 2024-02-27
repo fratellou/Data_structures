@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
   task1();
-  task5();
+  task2();
   return 0;
 }
 
@@ -83,9 +83,9 @@ int calculatePostfix(const string& postfix) {
     return operands.head->data - '0';
 }
 
-void task5() {
+void task2() {
     string sequence = "({[]})";
-    cout << "5. Последовательность: " << sequence << endl;
+    cout << "2. Последовательность: " << sequence << endl;
     if (isBalanced(sequence)) {
         cout << "Скобки сбалансированы." << endl;
     } else {

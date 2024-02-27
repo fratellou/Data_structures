@@ -7,6 +7,6 @@ void task1();
 int precedence(char op);
 string infixToPostfix(const string& expression);
 int calculatePostfix(const string& postfix);
-void task5();
+void task2();
 int isBalanced(const string& sequence); // Function to check if a given sequence of brackets is correct
 #endif
